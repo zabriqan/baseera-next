@@ -84,7 +84,7 @@ export default function Header() {
       {/* Programs Section */}
       <section
   id="program"
-  className="bg-[#6C8CC7] max-w-[95%] md:max-w-7xl mx-auto items-center rounded-t-2xl text-white py-16 px-4 md:px-10 lg:px-20"
+  className="bg-[#6C8CC7] max-w-[95%] md:max-w-7xl mx-auto items-center rounded-t-2xl scroll-mt-24 text-white py-16 px-4 md:px-10 lg:px-20"
 >
   <div className="mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8 ">
     {/* Left side: heading and text */}

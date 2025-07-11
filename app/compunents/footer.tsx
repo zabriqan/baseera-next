@@ -13,12 +13,12 @@ export default function Footer() {
           <p className="mb-4">Where Wisdom Shines</p>
           <div className="space-y-2">
           <div className="flex flex-wrap justify-center md:justify-start gap-3">
-              <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+              <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
                 <Facebook size={18} />
               </Link>
             
             
-              <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+              <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
                 <Linkedin size={18} />
               </Link>
             </div>
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         {/* Section 2 */}
-        <div>
+        <div className="hidden md:block">
           <h4 className="font-semibold text-lg mb-2">Quick Links</h4>
           <ul className="space-y-1">
             <li><Link href="#" className="hover:underline">Home</Link></li>
@@ -50,19 +50,19 @@ export default function Footer() {
             Islamic Baseera Education (IBE) is the media arm of Baseera's World, committed to blending Islamic principles with contemporary learning methods to nurture well-rounded individuals.
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-3">
-            <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+            <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
               <Youtube size={18} />
             </Link>
-            <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+            <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
               <Facebook size={18} />
             </Link>
-            <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+            <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
               <Twitter size={18} />
             </Link>
-            <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+            <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
               <Instagram size={18} />
             </Link>
-            <Link href="#" className="flex items-center justify-center bg-white text-[#6C8CC7] rounded-full p-2 hover:opacity-90 transition">
+            <Link href="#" className="flex items-center justify-center text-white rounded-full p-2 hover:opacity-90 transition">
               <Linkedin size={18} />
             </Link>
           </div>

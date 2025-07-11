@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import logo from '@/public/logo.png'; // adjust path
+import logo from '@/public/logo.png';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useNavStore } from '@/lib/store/navstore';
@@ -27,8 +27,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+    <nav className="w-full bg-white sticky top-0 z-40">
+      <div className="max-w-7xl mx-auto  flex justify-between items-center h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
@@ -46,7 +46,7 @@ export default function Navbar() {
       className={`transition-opacity duration-300 text-[16px] font-medium hover:opacity-100 ${
         activeTab === item.tab
           ? 'text-[#6C8CC7] opacity-100'
-          : 'text-[#6C8CC7] opacity-80'
+          : 'text-[#6C8CC7] opacity-50'
       }`}
     >
       {item.label}

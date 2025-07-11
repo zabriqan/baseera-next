@@ -10,7 +10,7 @@ export default function Main() {
     <div>
 
       {/* About Us Section */}
-      <section id="about" className="w-full bg-white py-12">
+      <section id="about" className="w-full bg-white py-12 scroll-mt-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-center ">
           <Image
             src={aboutImage}
@@ -28,7 +28,7 @@ export default function Main() {
       </section>
 
       {/* Mission Section */}
-      <section className="w-full bg-white py-12">
+      <section className="w-full bg-white py-12 ">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center px-4">
           <Image
             src={missionImage}
