@@ -7,7 +7,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  Building2,
 } from "lucide-react";
 
 export default function ContactPage() {
@@ -30,7 +29,7 @@ export default function ContactPage() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-10 py-24 flex flex-col md:flex-row gap-10">
         {/* Form Section */}
         <form
-          className="bg-[#6C8CC7]/20 backdrop-blur-lg p-6 md:p-8 rounded-2xl flex-1 space-y-4 shadow-lg text-white"
+          className="bg-primary/40  p-8 md:p-12 rounded-2xl flex-1 space-y-6 shadow-lg text-white"
         >
           <div className="flex gap-4">
             <div className="w-1/2">
@@ -88,7 +87,7 @@ export default function ContactPage() {
         </form>
 
         {/* Info Section */}
-        <div className="text-white flex-1 space-y-6">
+        <div className="text-white flex-1 flex flex-col justify-center space-y-6">
           <h2 className="text-3xl font-bold">Let’s Get In Touch With Us</h2>
           <p className="text-white/80 max-w-md">
             We value your feedback and suggestions! Reach out to us with any

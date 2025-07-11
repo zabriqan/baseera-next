@@ -34,16 +34,16 @@ export default function IBE() {
     
     {/* Left: Social Icons */}
     <div className="flex-1 flex justify-evenly gap-3 p-2 max-w-[40%]">
-      <a href="#" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
+      <a href="https://youtube.com/@islamicbaseera?si=zvGmG2G2VX5sIJ-Z" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
         <Youtube className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" />
       </a>
-      <a href="#" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
+      <a href="https://www.facebook.com/share/15qX9CipMf/?mibextid=wwXIfr" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
         <Facebook className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" />
       </a>
-      <a href="#" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
+      <a href="https://www.instagram.com/islamicbaseera/?utm_source=ig_web_button_share_sheet" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
         <Instagram className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" />
       </a>
-      <a href="#" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
+      <a href="https://x.com/islamicbaseera?s=11" className="rounded-full p-2 hover:bg-[#1D78C1] hover:text-white transition">
         <Twitter className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" />
       </a>
     </div>

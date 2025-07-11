@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import Image from "next/image";
 import vission from '@/public/04 Vision.jpg'
 import program1 from "@/public/En 1.svg";
@@ -23,20 +24,20 @@ export default function Header() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Section */}
           <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-             Where <span className="text-[#6C8CC7]">Wisdom</span>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-800">
+             Where <span className="text-primary">Wisdom</span>
             <br /> Shines
          </h1>
             <p className="text-gray-700 text-lg">
               By Nurturing Minds, Cultivating Character, Inspiring Futures
             </p>
             <div className="flex gap-4 items-center flex-wrap">
-              <button className="bg-[#C7A76C] text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-[#b48f57] transition flex items-center gap-2">
+              <Link href ='/contact' className="bg-secondary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-secondary-bold transition flex items-center gap-2">
                 Awaken Baseera <ArrowRight size={18} />
-              </button>
+              </Link>
               <a
                 href="/"
-                className="text-[#6C8CC7] flex items-center gap-2 text-lg font-medium"
+                className="text-primary flex items-center gap-2 text-lg font-medium"
               >
                 <PlayCircle size={24} /> Watch Video
               </a>
@@ -84,7 +85,7 @@ export default function Header() {
       {/* Programs Section */}
       <section
   id="program"
-  className="bg-[#6C8CC7] max-w-[95%] md:max-w-7xl mx-auto items-center rounded-t-2xl scroll-mt-24 text-white py-16 px-4 md:px-10 lg:px-20"
+  className="bg-primary max-w-[95%] md:max-w-7xl mx-auto items-center rounded-t-2xl scroll-mt-24 text-white py-16 px-4 md:px-10 lg:px-20"
 >
   <div className="mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8 ">
     {/* Left side: heading and text */}
@@ -116,7 +117,7 @@ export default function Header() {
         />
         <h3 className="font-semibold text-base mb-1 text-white">Environment 1</h3>
         <a
-          href="/"
+          href="#"
           className="text-white/80 hover:text-white inline-flex items-center gap-1 text-sm transition"
         >
           Learn more <ArrowRight size={14} />
@@ -138,7 +139,7 @@ export default function Header() {
         />
         <h3 className="font-semibold text-base mb-1 text-white">Environment 2</h3>
         <a
-          href="/"
+          href="#"
           className="text-white/80 hover:text-white inline-flex items-center gap-1 text-sm transition"
         >
           Learn more <ArrowRight size={14} />
@@ -160,7 +161,7 @@ export default function Header() {
         />
         <h3 className="font-semibold text-base mb-1 text-white">Grade 1</h3>
         <a
-          href="/"
+          href="#"
           className="text-white/80 hover:text-white inline-flex items-center gap-1 text-sm transition"
         >
           Learn more <ArrowRight size={14} />

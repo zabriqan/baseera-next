@@ -1,29 +1,52 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import logo from '@/public/logo.png';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { useNavStore } from '@/lib/store/navstore';
 import { X } from 'lucide-react';
 
 
 export default function Navbar() {
+   const pathname = usePathname();
+  const setActiveTab = useNavStore((state) => state.setActiveTab);
+  const activeTab = useNavStore((state) => state.activeTab);
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const { activeTab, setActiveTab } = useNavStore();
 
-  const handleScroll = (id: string, tab: string) => {
-    setActiveTab(tab);
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpen(false); // close mobile menu
-  };
+  // ✅ Sync activeTab with route
+  useEffect(() => {
+    const syncTab = () => {
+      if (pathname === '/contact') {
+        setActiveTab('contact');
+      } else if (pathname.toLowerCase() === '/ibe') {
+        setActiveTab('ibe');
+      } else if (pathname === '/') {
+        const hash = window.location.hash;
+        if (hash === '#about') {
+          setActiveTab('about');
+        } else if (hash === '#program') {
+          setActiveTab('programs');
+        } else {
+          setActiveTab('home');
+        }
+      }
+    };
 
+    syncTab();
+
+    // also re-run on hashchange (e.g. clicking #about links)
+    window.addEventListener('hashchange', syncTab);
+    return () => window.removeEventListener('hashchange', syncTab);
+  }, [pathname, setActiveTab]);
   const navItems = [
     { label: 'Home', href: '/', tab: 'home' },
     { label: 'About', href: '/#about', tab: 'about' },
     { label: 'Programs', href: '/#program', tab: 'programs' },
     { label: 'IBE', href: '/IBE', tab: 'ibe' },
+
   ];
 
   return (
@@ -43,10 +66,10 @@ export default function Navbar() {
       key={item.tab}
       href={item.href}
       onClick={() => setActiveTab(item.tab)}
-      className={`transition-opacity duration-300 text-[16px] font-medium hover:opacity-100 ${
+      className={`transition-opacity duration-300 text-[16px] font-medium hover:text-primary-bold hover:opacity-100 ${
         activeTab === item.tab
-          ? 'text-[#6C8CC7] opacity-100'
-          : 'text-[#6C8CC7] opacity-50'
+          ? 'text-primary-bold opacity-100'
+          : 'text-primary opacity-50'
       }`}
     >
       {item.label}
@@ -56,12 +79,15 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-        <Link
+        <Link key='contact'
+        onClick={() => setActiveTab('contact')}
   href="/contact"
-  className="bg-[#C7A76C]  text-white font-semibold text-[16px] hover:bg-[#b48f57] opacity-80 px-4 py-2 rounded-lg transition"
+  className={`  text-white bg-secondary font-semibold text-[16px] hover:bg-secondary-bold opacity-80 px-4 py-2 rounded-lg transition${
+    activeTab == 'contact' ? 'bg-secondary-bold ' : 'bg-secondary' }`}
 >
   Contact
 </Link>
+
 
         </div>
 
@@ -69,7 +95,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-3xl text-[#6C8CC7]"
+            className="text-3xl text-primary-bold"
           >
             ☰
           </button>
@@ -82,7 +108,7 @@ export default function Navbar() {
     {/* Close Button */}
     <button
       onClick={() => setMenuOpen(false)}
-      className="absolute top-4 right-4 text-[#6C8CC7] hover:opacity-100 opacity-70"
+      className="absolute top-4 left-4 text-primary hover:text-primary-bold opacity-70"
     >
       <X size={32} />
     </button>
@@ -95,10 +121,10 @@ export default function Navbar() {
           setActiveTab(item.tab);
           setMenuOpen(false);
         }}
-        className={`text-xl font-semibold hover:opacity-100 ${
+        className={`text-xl font-semibold hover:text-primary-bold hover:opacity-100 ${
           activeTab === item.tab
-            ? 'text-[#6C8CC7] opacity-100'
-            : 'text-[#6C8CC7] opacity-50'
+            ? 'text-primary-bold opacity-100'
+            : 'text-primary opacity-50'
         }`}
       >
         {item.label}
@@ -107,8 +133,11 @@ export default function Navbar() {
 
     <Link
       href="/contact"
-      onClick={() => setMenuOpen(false)}
-      className="text-xl font-semibold text-[#6C8CC7]"
+      onClick={() => {
+        setActiveTab('contact');
+        setMenuOpen(false);
+      }}
+      className="text-xl font-semibold text-secondary hover:text-secondary-bold"
     >
       Contact
     </Link>
