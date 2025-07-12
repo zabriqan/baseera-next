@@ -51,16 +51,16 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto  flex justify-between items-center h-20">
+      <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-4">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="flex items-center gap-10">
           <Link href="/">
             <Image src={logo} alt="Logo"  />
           </Link>
         </div>
 
         {/* Desktop Links */}
-       <div className="hidden md:flex gap-10 items-center">
+        <div className="hidden md:flex gap-10 ml-10 flex-1">
   {navItems.map((item) => (
     <Link
       key={item.tab}

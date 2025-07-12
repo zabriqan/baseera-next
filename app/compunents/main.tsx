@@ -11,7 +11,7 @@ export default function Main() {
 
       {/* About Us Section */}
       <section id="about" className="w-full bg-white py-12 scroll-mt-24">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-center ">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center ">
           <Image
             src={aboutImage}
             alt="About Us"
@@ -29,7 +29,7 @@ export default function Main() {
 
       {/* Mission Section */}
       <section className="w-full bg-white py-12 ">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-center px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center px-4">
           <Image
             src={missionImage}
             alt="Mission"
@@ -46,7 +46,7 @@ export default function Main() {
 
       {/* Vision Section */}
       <section className="w-full bg-white py-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-center px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center px-4">
           <Image
             src={visionImage}
             alt="Vision"
@@ -73,7 +73,7 @@ export default function Main() {
       </section>
 
       {/* Future Goals Section */}
-      <section className="w-full bg-white py-12 px-4">
+      <section className="w-full bg-white py-12 mb-15 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center md:text-left">Future Goals</h2>
           <p>

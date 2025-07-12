@@ -2,11 +2,11 @@
 
 
 @theme {
-  --color-primary: #6C8CC7;
-  --color-primary-bold: #456BB0;
+  --color-primary: #456BB0;
+  --color-primary-bold: #2F4F8C;
 
-  --color-secondary: #D2AB67;
-  --color-secondary-bold: #B68E45;
+  --color-secondary: #B68E45;
+  --color-secondary-bold: #8C6A2F;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
