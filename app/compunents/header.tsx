@@ -54,9 +54,8 @@ export default function Header() {
           </div>
 
           {/* Right Image + Stats */}
-          <div className="relative w-full max-w-md mx-auto">
+          <div className=" w-full max-w-md ml-auto">
   {/* Background Layer */}
-  <div className=" rounded-3xl w-full h-full " />
   <div className="rounded-3xl">
     <Image
       src={vission}
@@ -94,7 +93,7 @@ export default function Header() {
         Tutors and Instructors from around the world
       </p>
     </div>
-  </div> */}
+ */}
 </div>
 
         </div>

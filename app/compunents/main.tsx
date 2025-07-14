@@ -29,7 +29,7 @@ export default function Main() {
 
       {/* Mission Section */}
       <section className="w-full bg-white py-12 ">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-12 items-center">
           <Image
             src={missionImage}
             alt="Mission"
@@ -46,7 +46,7 @@ export default function Main() {
 
       {/* Vision Section */}
       <section className="w-full bg-white py-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center ">
           <Image
             src={visionImage}
             alt="Vision"
