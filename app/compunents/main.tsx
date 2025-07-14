@@ -20,7 +20,7 @@ export default function Main() {
           <div className="max-w-[95%] mx-auto md:w-7/12 ">
             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">ABOUT US</h2>
             <p>
-            Baseera&apos;s World is a dynamic and forward-thinking educational institution that strives to ignite the potential of every learner. We are committed to creating an environment where students are encouraged to think critically, embrace curiosity, and develop both intellectual and moral strength. At Baseera&apos;s World, education is not just about academic success; it's about nurturing the mind, cultivating strong character, and inspiring futures that will have a lasting positive impact on the world. <br />
+            Baseera&apos;s World is a dynamic and forward-thinking educational institution that strives to ignite the potential of every learner. We are committed to creating an environment where students are encouraged to think critically, embrace curiosity, and develop both intellectual and moral strength. At Baseera&apos;s World, education is not just about academic success; it&apos;s about nurturing the mind, cultivating strong character, and inspiring futures that will have a lasting positive impact on the world. <br />
             With a strong foundation in both Islamic values and modern education, Baseera&apos;s World serves as a beacon of knowledge and wisdom. Our approach integrates religious and worldly education, ensuring that our students are well-equipped to navigate life with purpose, responsibility, and confidence. We believe in educating the whole person, and our students are taught to balance spiritual depth with academic excellence, setting them on a path to become well-rounded, socially conscious individuals who will make a difference in the world.
             </p>
           </div>
@@ -38,7 +38,7 @@ export default function Main() {
           <div className="w-full md:w-7/12 ">
             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">Our Mission</h2>
             <p>
-            Baseera&apos;s World empowers learners to reach their full potential by nurturing curious minds, cultivating resilient character, and inspiring futures that will shape a better world for all. Our commitment to education is rooted in the belief that knowledge and wisdom, when combined, have the power to transform individuals and communities. At Baseera&apos;s World, we are 'Nurturing Minds, Cultivating Character, Inspiring Futures,' providing students with the tools to excel academically and morally, while embracing the courage and creativity needed to foster positive change.
+            Baseera&apos;s World empowers learners to reach their full potential by nurturing curious minds, cultivating resilient character, and inspiring futures that will shape a better world for all. Our commitment to education is rooted in the belief that knowledge and wisdom, when combined, have the power to transform individuals and communities. At Baseera&apos;s World, we are &apos;Nurturing Minds, Cultivating Character, Inspiring Futures,&apos; providing students with the tools to excel academically and morally, while embracing the courage and creativity needed to foster positive change.
             </p>
           </div>
         </div>

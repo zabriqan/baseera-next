@@ -105,7 +105,7 @@ export default function Header() {
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">Programs</h2>
             <p className="text-white/90 max-w-md mx-auto md:mx-0">
-              Baseera’s World offers three core educational programs:
+              Baseera&apos;s World offers three core educational programs:
               Environment 1, Environment 2 (both garden-style classes), and
               Grade 1. As the institution grows, these programs will gradually
               expand to include higher grades, starting with Grade 2, Grade 3,

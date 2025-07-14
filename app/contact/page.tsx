@@ -88,11 +88,11 @@ export default function ContactPage() {
 
         {/* Info Section */}
         <div className="text-white flex-1 flex flex-col justify-center space-y-6">
-          <h2 className="text-3xl font-bold">Let’s Get In Touch With Us</h2>
+          <h2 className="text-3xl font-bold">Let&apos;s Get In Touch With Us</h2>
           <p className="text-white/80 max-w-md">
             We value your feedback and suggestions! Reach out to us with any
-            thoughts or inquiries, and let’s work together to create an even
-            better learning experience at Baseera’s World.
+            thoughts or inquiries, and let&apos;s work together to create an even
+            better learning experience at Baseera&apos;s World.
           </p>
 
           <div className="space-y-4 text-sm md:text-base">
