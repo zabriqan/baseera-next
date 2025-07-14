@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import aboutImage from "@/public/02 About Sec Pic.jpg";
 import missionImage from "@/public/03 Mission Pic.jpg";
-import visionImage from "@/public/04 Vision.jpg";
+import visionImage from "@/public/01 Landing Sec Pic.jpg";
 
 export default function Main() {
   return (

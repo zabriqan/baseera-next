@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import vission from '@/public/04 Vision.jpg';
+import landing from '@/public/landing.jpg';
 import program1 from '@/public/En 1.svg';
 import program2 from '@/public/En 2.svg';
 import program3 from '@/public/Grade 1.svg';
@@ -54,7 +54,7 @@ export default function Header() {
   {/* Background Layer */}
   <div className="rounded-3xl">
     <Image
-      src={vission}
+      src={landing}
       alt="Tree growing from book"
       className="rounded-3xl w-full h-auto shadow-xl"
     />
