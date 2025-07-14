@@ -11,10 +11,6 @@ import program3 from '@/public/Grade 1.svg';
 import {
   ArrowRight,
   PlayCircle,
-  ScrollText,
-  GraduationCap,
-  Users,
-  BookOpenText,
 } from 'lucide-react';
 
 export default function Header() {

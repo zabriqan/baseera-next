@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Section 1 */}
         <div>
-          <h4 className="font-semibold text-lg mb-2">Baseera's World</h4>
+          <h4 className="font-semibold text-lg mb-2">Baseera&apos;s World</h4>
           <p className="mb-4">Where Wisdom Shines</p>
           <div className="space-y-2">
           <div className="flex flex-wrap justify-center md:justify-start gap-3">
@@ -49,7 +49,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-lg mb-2">Follow Islamic Baseera Education</h4>
           <p className="mb-4">
-            Islamic Baseera Education (IBE) is the media arm of Baseera's World, committed to blending Islamic principles with contemporary learning methods to nurture well-rounded individuals.
+            Islamic Baseera Education (IBE) is the media arm of Baseera&apos;s World, committed to blending Islamic principles with contemporary learning methods to nurture well-rounded individuals.
           </p>
           <div className="flex flex-wrap justify-center md:justify-start md: gap-3">
             <Link href="https://youtube.com/@islamicbaseera?si=zvGmG2G2VX5sIJ-Z" className="flex items-center justify-center text-white hover:bg-primary-bold rounded-full p-2 hover:opacity-90 transition">
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center mt-8 text-sm">
-        &copy; All Rights Reserved - Baseera's World
+        &copy; All Rights Reserved - Baseera&apos;s World
       </div>
     </footer>
   );
