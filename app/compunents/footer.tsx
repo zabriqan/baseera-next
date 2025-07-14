@@ -6,7 +6,7 @@ import { Facebook, Linkedin, Youtube, Twitter, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-primary text-white py-10 px-4 md:px-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div className="md:w-7xl w-80 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Section 1 */}
         <div>
           <h4 className="font-semibold text-lg mb-2">Baseera&apos;s World</h4>

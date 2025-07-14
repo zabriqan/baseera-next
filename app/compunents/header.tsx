@@ -23,9 +23,9 @@ export default function Header() {
     <>
       {/* Hero Section */}
       <header className="w-full bg-white py-28 px-4 md:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="md:w-7xl w-80 mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Section */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center md:text-left ">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-800">
               Where <span className="text-primary">Wisdom</span>
               <br /> Shines
@@ -33,7 +33,7 @@ export default function Header() {
             <p className="text-gray-700 text-lg">
               By Nurturing Minds, Cultivating Character, Inspiring Futures
             </p>
-            <div className="flex gap-4 items-center flex-wrap">
+            <div className="flex gap-4 items-center justify-center md:justify-start flex-wrap">
               <Link
                 href="/contact"
                 className="bg-secondary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-secondary-bold transition flex items-center gap-2"
@@ -98,7 +98,7 @@ export default function Header() {
       {/* Programs Section */}
       <section
         id="program"
-        className="bg-primary max-w-[95%] md:max-w-7xl mx-auto items-center rounded-t-2xl scroll-mt-24 text-white py-16 px-4 md:px-10 lg:px-20"
+        className="bg-primary md:w-7xl w-80 md:max-w-7xl mx-auto items-center rounded-t-2xl scroll-mt-24 text-white py-16 px-4 md:px-10 lg:px-20"
       >
         <div className="mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8">
           {/* Left side: heading and text */}
