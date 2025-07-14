@@ -36,7 +36,7 @@ export default function Header() {
             <div className="flex gap-4 items-center justify-center md:justify-start flex-wrap">
               <Link
                 href="/contact"
-                className="bg-secondary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-secondary-bold transition flex items-center gap-2"
+                className="bg-secondary text-white px-3 md:px-6 py-3 rounded-lg font-medium shadow hover:bg-secondary-bold transition flex items-center gap-2"
               >
                 Awaken Baseera <ArrowRight size={18} />
               </Link>

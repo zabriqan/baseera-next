@@ -26,7 +26,7 @@ export default function ContactPage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 md:w-7xl w-80 mx-auto px-4 md:px-10 py-24 flex flex-col md:flex-row gap-10">
+      <div className="relative z-10 md:w-7xl w-80 mx-auto  md:px-10 py-24 flex flex-col md:flex-row gap-10">
         {/* Form Section */}
         <form
           className="bg-primary/40  p-8 md:p-12 rounded-2xl flex-1 space-y-6 shadow-lg text-white"
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 placeholder="Eg. John"
-                className="w-full rounded-xl px-4 py-2 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
             <div className="w-1/2">
@@ -45,7 +45,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 placeholder="Eg. Doe"
-                className="w-full rounded-xl px-4 py-2 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function ContactPage() {
               <input
                 type="email"
                 placeholder="Eg. Hello@Email.co"
-                className="w-full  rounded-xl px-4 py-2 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
             <div className="w-1/2">
@@ -64,7 +64,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full rounded-xl px-4 py-2 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
             <textarea
               rows={4}
               placeholder="Your Message Here..."
-              className="w-full rounded-xl px-4 py-2 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full text-[8px] md:text-sm rounded-xl px-4 py-4 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
             ></textarea>
           </div>
 

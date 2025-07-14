@@ -51,11 +51,11 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-4">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between h-20 px-7 md:px-0">
         {/* Logo */}
         <div className="flex items-center gap-10">
           <Link href="/">
-            <Image src={logo} alt="Logo"  />
+            <Image src={logo} alt="Logo"  className="w-50 md:w-80 h-auto" />
           </Link>
         </div>
 
