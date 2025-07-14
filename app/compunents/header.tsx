@@ -40,12 +40,12 @@ export default function Header() {
               >
                 Awaken Baseera <ArrowRight size={18} />
               </Link>
-              <a
+              <Link
                 href="/"
                 className="text-primary flex items-center gap-2 text-lg font-medium"
               >
                 <PlayCircle size={24} /> Watch Video
-              </a>
+              </Link>
             </div>
           </div>
 
