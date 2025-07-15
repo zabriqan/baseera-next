@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import landing from '@/public/landing.jpg';
+import landing from '@/public/landing.jpeg';
 import program1 from '@/public/En 1.svg';
 import program2 from '@/public/En 2.svg';
 import program3 from '@/public/Grade 1.svg';
