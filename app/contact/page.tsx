@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
 import landing from "@/public/01 Landing Sec Pic.jpg";
 
@@ -10,6 +10,50 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+
+  const [error, setError] = useState("");
+const [success, setSuccess] = useState("");
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(""); // clear previous error
+    setSuccess("");
+  
+    const { firstName, lastName, email, subject, message } = formData;
+  
+    // Basic validation
+    if (!firstName || !lastName || !email || !subject || !message) {
+      setError("Please fill out all fields.");
+      return;
+    }
+  
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+  
+    if (res.ok) {
+      setSuccess("Message sent successfully!");
+      setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    } else {
+      setError("Failed to send message. Please try again.");
+    }
+  };
+  
+  
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
   return (
     <div className="relative w-full">
       {/* Background image */}
@@ -28,14 +72,16 @@ export default function ContactPage() {
       {/* Content */}
       <div className="relative z-10 md:w-7xl w-80 mx-auto  md:px-10 py-24 flex flex-col md:flex-row gap-10">
         {/* Form Section */}
-        <form
+        <form onSubmit={handleSubmit}
           className="bg-primary/40  p-8 md:p-12 rounded-2xl flex-1 space-y-6 shadow-lg text-white"
         >
           <div className="flex gap-4">
             <div className="w-1/2">
               <label className="block text-sm font-medium mb-1">First Name</label>
               <input
-                type="text"
+                type="text" name="firstName"
+                value={formData.firstName} onChange={handleChange}
+                required
                 placeholder="Eg. John"
                 className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
@@ -44,6 +90,7 @@ export default function ContactPage() {
               <label className="block text-sm font-medium mb-1">Last Name</label>
               <input
                 type="text"
+                name="lastName"  value={formData.lastName}  onChange={handleChange}
                 placeholder="Eg. Doe"
                 className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
@@ -55,6 +102,8 @@ export default function ContactPage() {
               <label className="block text-sm font-medium mb-1 ">Email Address</label>
               <input
                 type="email"
+                name="email"  value={formData.email}  onChange={handleChange}
+                required
                 placeholder="Eg. Hello@Email.co"
                 className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
@@ -63,6 +112,7 @@ export default function ContactPage() {
               <label className="block text-sm font-medium mb-1">Subject</label>
               <input
                 type="text"
+                name="subject"  value={formData.subject}  onChange={handleChange}
                 placeholder="Subject"
                 className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
@@ -73,11 +123,13 @@ export default function ContactPage() {
             <label className="block text-sm font-medium mb-1 ">Message</label>
             <textarea
               rows={4}
+              name="message"  value={formData.message}  onChange={handleChange}
               placeholder="Your Message Here..."
               className="w-full text-[8px] md:text-sm rounded-xl px-4 py-4 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
             ></textarea>
           </div>
-
+          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {success && <p className="text-green-500 text-sm">{success}</p>}
           <button
             type="submit"
             className="bg-[#D2AB67] rounded-xl text-white font-medium px-6 py-2  hover:bg-[#b79357] transition"
