@@ -83,7 +83,7 @@ const [success, setSuccess] = useState("");
                 value={formData.firstName} onChange={handleChange}
                 required
                 placeholder="Eg. John"
-                className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full rounded-xl text-[10px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
             <div className="w-1/2">
@@ -92,7 +92,7 @@ const [success, setSuccess] = useState("");
                 type="text"
                 name="lastName"  value={formData.lastName}  onChange={handleChange}
                 placeholder="Eg. Doe"
-                className="w-full rounded-xl text-[8px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full rounded-xl text-[10px] md:text-sm px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
           </div>
@@ -105,7 +105,7 @@ const [success, setSuccess] = useState("");
                 name="email"  value={formData.email}  onChange={handleChange}
                 required
                 placeholder="Eg. Hello@Email.co"
-                className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full text-[10px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
             <div className="w-1/2">
@@ -114,7 +114,7 @@ const [success, setSuccess] = useState("");
                 type="text"
                 name="subject"  value={formData.subject}  onChange={handleChange}
                 placeholder="Subject"
-                className="w-full text-[8px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full text-[10px] md:text-sm rounded-xl px-4 py-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ const [success, setSuccess] = useState("");
               rows={4}
               name="message"  value={formData.message}  onChange={handleChange}
               placeholder="Your Message Here..."
-              className="w-full text-[8px] md:text-sm rounded-xl px-4 py-4 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full text-[10px] md:text-sm rounded-xl px-4 py-4 bg-white text-black focus:outline-none focus:ring-2 focus:ring-white"
             ></textarea>
           </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}

@@ -1,10 +1,5 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+import { supabase } from '@/lib/db'
 
 export async function POST(req: Request) {
   try {
@@ -14,13 +9,13 @@ export async function POST(req: Request) {
     const { firstName, lastName, email, subject, message } = data;
 
     // Validate input
-    if (!firstName || !lastName || !email || !subject || !message) {
+    if (!firstName || !lastName || !email  ) {
       console.error("Validation failed: Missing fields");
       return NextResponse.json({ error: "All fields required" }, { status: 400 });
     }
 
     // Insert into Supabase
-    const { error } = await supabase.from("userdata").insert([
+    const { error } = await supabase.from("contact_queries").insert([
       {
         first_name: firstName,
         last_name: lastName,
